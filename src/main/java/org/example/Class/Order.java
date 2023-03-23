@@ -20,7 +20,7 @@ public class Order implements Serializable {
     private int idOrder;
     @Column(name = "products")
     private String order;
-    @Column(name = "idUser")
+    @Column(name = "id_user")
     private int idUser;
     private int sum;
 
@@ -28,7 +28,7 @@ public class Order implements Serializable {
 
     //(fetch = FetchType.EAGER)
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "idUser")
+    @JoinColumn(name = "id_user")
     private User user;
 
 
