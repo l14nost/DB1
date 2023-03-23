@@ -25,7 +25,7 @@ public class Order implements Serializable {
     private int sum;
 
 
-
+//123131
     //(fetch = FetchType.EAGER)
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_user")
